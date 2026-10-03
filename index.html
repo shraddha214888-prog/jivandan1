@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jivandan (જીવનદાન) - Emergency Corridor Pre-Alert</title>
+    <link rel="icon" type="image/jpeg" href="/src/assets/images/jivandan_app_logo_1790995600042.jpg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#e11d48" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Jivandan" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="description" content="Jivandan: Real-time emergency vehicle pre-alert system notifying nearby motorists to clear traffic lanes before sirens are heard." />
+    <meta property="og:title" content="Jivandan (જીવનદાન) - Emergency Corridor Pre-Alert" />
+    <meta property="og:description" content="Jivandan: Real-time emergency vehicle pre-alert system notifying nearby motorists to clear traffic lanes before sirens are heard." />
+    <meta property="og:image" content="/src/assets/images/jivandan_app_logo_1790995600042.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@500;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('SW registration note:', err);
+          });
+        });
+      }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-rose-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

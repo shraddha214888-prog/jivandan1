@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jivandan.emergencycorridor",
+      "sha256_cert_fingerprints": [
+        "14:6D:E9:7F:0E:52:D7:11:86:EC:D9:67:C9:76:6A:07:33:6C:63:F2:E4:70:62:52:9F:9A:8E:7F:AE:52:43:4F"
+      ]
+    }
+  }
+]
